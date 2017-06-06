@@ -2,12 +2,12 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // A:
 
-function max(num1, num2){
-    if (num1 > num2) {
-      return num1;
-    } else {
-      return num2;
-    }
+function max (num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
 }
 console.log(max(1, 2));
 
@@ -15,20 +15,20 @@ console.log(max(1, 2));
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // A:
 
-function maxOfThree(num1, num2, num3){
-    if (num1 > num2) {
-      if (num1 > num3) {
-        return num1;
-      } else {
-        return num3;
-      }
+function maxOfThree (num1, num2, num3) {
+  if (num1 > num2) {
+    if (num1 > num3) {
+      return num1;
     } else {
-      if (num2 > num3) {
-        return num2;
-      } else {
-        return num3;
-      }
+      return num3;
     }
+  } else {
+    if (num2 > num3) {
+      return num2;
+    } else {
+      return num3;
+    }
+  }
 }
 console.log(maxOfThree(1, 2, 3));
 
@@ -36,8 +36,8 @@ console.log(maxOfThree(1, 2, 3));
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // A:
 
-function isVowel(char){
-  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+function isVowel (char) {
+  if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
     return true;
   } else {
     return false;
@@ -49,7 +49,7 @@ console.log(isVowel('u'));
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // A:
 
-function sum(num1, num2){
+function sum (num1, num2) {
   Number(num1);
   Number(num2);
   return num1 + num2;
@@ -60,7 +60,7 @@ console.log(sum(2, 2));
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // A:
 
-function avg(num1, num2, num3){
+function avg (num1, num2, num3) {
   Number(num1);
   Number(num2);
   Number(num3);
@@ -72,7 +72,7 @@ console.log(avg(1, 2, 3));
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // A:
 
-function getLength(myString){
+function getLength (myString) {
   return myString.length;
 }
 console.log(getLength('four'));
@@ -83,10 +83,10 @@ console.log(getLength('four'));
 // Otherwise the function should return `false`.
 // A:
 
-function greaterThan(num1, num2){
+function greaterThan (num1, num2) {
   return (num1 < num2);
 }
-console.log(greaterThan(1,2));
+console.log(greaterThan(1, 2));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -95,7 +95,7 @@ console.log(greaterThan(1,2));
 // is the parameter that was passed in.
 // A:
 
-function greet(name){
+function greet (name) {
   return 'Hello, ' + name + '!';
 }
 console.log(greet('Bob'));
@@ -109,7 +109,7 @@ console.log(greet('Bob'));
 // sentence: "quick brown fox jumps over the fence"
 // A:
 
-function madlib(word1, word2, word3, word4){
+function madlib (word1, word2, word3, word4) {
   return 'The ' + word1 + ', ' + word2 + ', ' + word3 + ' jumps over the ' + word4 + '.';
 }
-console.log(madlib('quick', 'brown', 'fox', 'fence'))
+console.log(madlib('quick', 'brown', 'fox', 'fence'));
